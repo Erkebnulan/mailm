@@ -1,0 +1,218 @@
+body.dark-mode {
+  background: #000!important;
+  .bg-white {
+    background: #000!important;
+  }
+  .icon-bar {
+    background: #7AC943;
+  }
+  .header-logo {
+    display: none;
+  }
+  .header-logo-white {
+    display: block;
+    order: 2;
+  }
+  .header-nav a {
+    background: #1A1A1A;
+  }
+  .header-nav a span {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  .switch-mode svg path {
+    stroke: rgba(255, 255, 255, 0.1)!important;
+    fill: rgba(255, 255, 255, 0.7);
+  }
+  .search-btn svg path {
+    stroke: #FFFFFF!important;
+  }
+  .slider-section {
+    background: #000!important;
+  }
+  .slider-section-inner {
+    background: #000;
+  }
+  .article-title {
+    color: #7AC943;
+  }
+  .today-news-title:before {
+    content: url(../img/icon/paper-light-green.svg);
+  }
+  .day-news-item h6 {
+    color: #FFFFFF;
+  }
+  .bg-green {
+    background: #1A1A1A!important;
+  }
+  .news-item-title {
+    color: #FFFFFF;
+  }
+  .newsCard-title {
+    color: #fff;
+  }
+  .rubric-icon-mini {
+    background: #116444;
+    color: #fff;
+  }
+  .line-arrow:before {
+    background: #7AC943;
+  }
+  .arrow-right-green {
+    background: url("../img/icon/arrow-right-light-green.svg");
+  }
+  .poster-3-slider .slick-dots li button:before {
+    background: #778E18;
+  }
+  .poster-3-slider .slick-dots li.slick-active button:before {
+    background: #7AC943;
+  }
+  .newsCard-lg-title {
+    color: #fff;
+  }
+  .videoNews-title {
+    color: #fff;
+  }
+  .arrow-down-green {
+    background: url("../img/icon/arrow-down-light-green.svg");
+  }
+  .podcast.type-4 .podcast-content {
+    background: rgba(26, 26, 26, 0.7);
+  }
+  .podcast-slider .slick-dots li button:before {
+    background: #778E18;
+  }
+  .podcast-slider .slick-dots li.slick-active button:before {
+    background: #7AC943;
+  }
+  .extra-news {
+    background: url("../img/main/extra-news-dark-bg.png") no-repeat right/contain #1A1A1A!important ;
+  }
+  footer {
+    background: #000;
+  }
+  .footer-logo {
+    display: none;
+  }
+  .footer-logo-dark {
+    display: block;
+  }
+  .scroll-top {
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05), 0px 5px 10px rgba(0, 0, 0, 0.05), 0px 10px 20px rgba(0, 0, 0, 0.03);
+  }
+  .scroll-top svg path {
+    stroke: #fff;
+  }
+  .day-news-bg {
+    background: #1A1A1A;
+  }
+  .page-title {
+    color: #fff;
+  }
+  .show-more {
+    background: #1A1A1A;
+  }
+  .show-more span {
+    color: rgba(255, 255, 255, 0.3);
+  }
+  .icon-refresh {
+    background: url("../img/icon/refresh-dark.svg");
+  }
+  .publication-title {
+    color: #fff;
+  }
+  .publication-head-text {
+    color: #fff;
+  }
+  .publication-text {
+    color: #fff;
+  }
+  .citation-text {
+    color: #fff;
+  }
+  .citation-author {
+    color: rgba(255, 255, 255, 0.3);
+  }
+  .publication-title-mini {
+    color: #fff;
+  }
+  .publication-text a {
+    color: #7AC943;
+  }
+  .tag {
+    border-color: #7AC943;
+    color: #7AC943;
+  }
+  .similar-news-box {
+    background: #1A1A1A;
+    box-shadow: inset 0px 30px 30px rgba(0, 0, 0, 0.05);
+  }
+  .similar-news-caption p {
+    color: #fff;
+  }
+  .special {
+    background: #000;
+  }
+  .special-text {
+    color: #fff;
+  }
+  .special .news-item-wrapper {
+    background: #1A1A1A;
+  }
+  .about-page {
+    background: #000;
+  }
+  .about-text {
+    color: #fff;
+  }
+  .contact {
+    background: #000;
+  }
+  .contact-text {
+    color: #fff;
+  }
+  .contact-link span {
+    color: #7AC943;
+  }
+  .contact-link svg path {
+    stroke: #7AC943;
+  }
+  .wrapper {
+    background: #000;
+  }
+  .section-heading .arrow-down-green {
+    background: url("../img/icon/arrow-right-light-green.svg") no-repeat center/contain !important;
+    width: 8px;
+    height: 16px;
+  }
+  .header-share-btn svg path {
+    stroke: rgba(255, 255, 255, 0.7);
+  }
+  .podcast-caption-xs .podcast-text {
+    color: #fff;
+  }
+  .icon-quote {
+    background: url("../img/icon/quote-light.svg");
+  }
+  .collapse-menu.show {
+    background: #1A1A1A;
+  }
+  .collapse-menu.show .icon-bar {
+    background: #7AC943;
+  }
+  .collapse-menu.show .menu-logo {
+    display: none;
+  }
+  .collapse-menu.show .menu-logo-white {
+    display: block;
+  }
+  .collapse-menu-nav a {
+    color: #fff;
+  }
+  .collapse-menu-nav a.active, .collapse-menu-nav a:hover {
+    color: #7AC943!important;
+  }
+  .about-nav a {
+    color: #fff;
+  }
+}
