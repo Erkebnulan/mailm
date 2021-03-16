@@ -127,6 +127,7 @@ header {
   min-height: 30px;
   margin-left: 35px;
   display: none;
+  margin-top: -5px;
 }
 
 .menu-logo-white {
@@ -136,6 +137,7 @@ header {
   min-height: 30px;
   margin-left: 35px;
   display: none;
+  margin-top: -5px;
 }
 
 .menu-logo img {
@@ -305,6 +307,7 @@ header {
   min-height: 30px;
   margin-left: 35px;
   order: 2;
+  margin-top: -5px;
 }
 
 .header-logo img {
@@ -321,6 +324,7 @@ header {
   margin-left: 35px;
   display: none;
   order: 2;
+  margin-top: -5px;
 }
 
 .header-logo-white img {
@@ -2374,8 +2378,61 @@ footer {
   display: none;
 }
 
+.header-nav a.with-icon i {
+  margin-left: -8px;
+}
 
+.search-page {
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
 
+.text-gray {
+  color: #C0C0C0;
+}
+
+.search-text {
+  margin-top: 15px;
+  font-size: 16px;
+  line-height: 100%;
+  color: #000000;
+}
+
+.not-found {
+  margin: 0;
+}
+
+.not-found .search-logo {
+  margin-top: 60px;
+  margin-left: 0;
+}
+
+.lottie-404 {
+  width: 600px;
+  height: 560px;
+  margin: 30px auto 0 auto;
+}
+
+.notFound-caption {
+  text-align: center;
+}
+
+.notFound-caption .page-title {
+  margin: 0 auto;
+}
+
+.not-found-text {
+  margin-top: 15px;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: -0.3px;
+  color: #000000;
+}
+
+.not-found-text a {
+  margin-left: 5px;
+  color: #116444;
+}
 
 
 

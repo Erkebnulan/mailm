@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="img/icon/kz-favicon.png">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="wrapper not-found">
+    <article class="bg-white">
+        <div class="container">
+            <a class="header-logo search-logo" href="index.html">
+                <img src="img/main/logo.png">
+            </a>
+            <div class="lottie-404"></div>
+            <div class="notFound-caption">
+                <h3 class="page-title">Такой страницы нет</h3>
+                <p class="not-found-text">Зато у нас есть много других страниц — например, <a href="#"> главная!</a></p>
+            </div>
+        </div>
+    </article>
+</div>
+
+
+<script src="js/libs.min.js"></script>
+<script src="js/lottie.min.js"></script>
+<script src="js/main.js"></script>
+<script>
+    var notFound = document.getElementsByClassName("lottie-404");
+    function maskAnimate(notFound) {
+        var animation = bodymovin.loadAnimation({
+            container: notFound,
+            renderer: "svg",
+            loop: true,
+            autoplay: true,
+            path: "lottie/404.json"
+        });
+    }
+    for (var i = 0; i < notFound.length; i++) {
+        maskAnimate(notFound[i]);
+    }
+</script>
+</body>
+</html>
