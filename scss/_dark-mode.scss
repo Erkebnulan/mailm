@@ -227,4 +227,22 @@ body.dark-mode {
   header {
     background: #000;
   }
+  .footer-social-link:hover svg path {
+    stroke: #7AC943;
+  }
+  .scroll-top:hover svg path {
+    stroke: #7AC943;
+  }
+  .news-item:hover .news-item-title {
+    color: #7AC943;
+  }
+  .contact-link:hover span {
+    color: #116444;
+  }
+  .contact-link:hover svg path {
+    stroke: #116444;
+  }
+  .publication-text a:hover {
+    color: #116444;
+  }
 }
