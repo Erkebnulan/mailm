@@ -754,14 +754,14 @@
   .publication-head {
     display: flex;
     flex-direction: column;
-    .publication-title {
+    h1 {
       order: 1;
     }
     .publication-head-tools {
       order: 2;
       margin-top: 20px;
     }
-    .publication-head-text {
+    p {
       order: 3;
       margin-top: 20px;
       font-size: 18px;
@@ -781,7 +781,7 @@
     left: initial;
     transform: initial;
   }
-  .publication-text {
+  .publication-body p{
     margin-top: 20px;
     font-size: 18px;
     line-height: 130%;
@@ -789,13 +789,13 @@
   .citation {
     margin-top: 20px;
   }
-  .citation-text {
+  blockquote {
     font-size: 20px;
   }
-  .citation-author {
+  .citation-span {
     font-size: 14px;
   }
-  .publication-title-mini {
+  .publication-body h6 {
     margin-top: 20px;
   }
   .video-iframe {

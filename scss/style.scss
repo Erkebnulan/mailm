@@ -1798,14 +1798,14 @@ footer {
   padding: 50px 0 90px 0;
 }
 
-.publication-title {
+.publication-head h1 {
   font-weight: 600;
   font-size: 38px;
   line-height: 36px;
   color: #1A1A1A;
 }
 
-.publication-head-text {
+.publication-head p {
   font-size: 16px;
   line-height: 130%;
   color: #1A1A1A;
@@ -1853,7 +1853,7 @@ footer {
   object-fit: cover;
 }
 
-.publication-text {
+.publication-body p {
   font-size: 17px;
   line-height: 130%;
   color: #1A1A1A;
@@ -1870,16 +1870,28 @@ footer {
   height: 30px;
 }
 
-.citation-text {
+blockquote {
   font-family: "SF Pro Text";
   font-size: 18px;
   line-height: 130%;
   letter-spacing: 0.02em;
   color: #1A1A1A;
-  margin-top: 15px;
+  margin-bottom: 0;
+  margin-top: 30px;
+  position: relative;
+  padding-top: 45px;
 }
 
-.citation-author {
+blockquote:before {
+  content: url("../img/icon/quote.svg");
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.citation figcaption {
   display: block;
   font-family: "SF Pro Text";
   font-size: 12px;
@@ -1888,7 +1900,7 @@ footer {
   margin-top: 15px;
 }
 
-.publication-title-mini {
+.publication-body h6 {
   font-weight: 700;
   font-size: 20px;
   line-height: 130%;
@@ -1912,12 +1924,12 @@ footer {
   height: 100%!important;
 }
 
-.publication-text a {
+.publication-body p a {
   color: #116444;
   transition: 0.2s ease;
 }
 
-.publication-text a:hover {
+.publication-body p a:hover {
   color: #7AC943;
 }
 

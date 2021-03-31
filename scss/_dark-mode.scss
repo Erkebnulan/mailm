@@ -118,25 +118,25 @@ body.dark-mode {
   .icon-refresh {
     background: url("../img/icon/refresh-dark.svg");
   }
-  .publication-title {
+  .publication-head h1 {
     color: #fff;
   }
-  .publication-head-text {
+  .publication-head p {
     color: #fff;
   }
-  .publication-text {
+  .publication-body p {
     color: #fff;
   }
-  .citation-text {
+  blockquote {
     color: #fff;
   }
-  .citation-author {
+  .citation figcaption {
     color: rgba(255, 255, 255, 0.3);
   }
-  .publication-title-mini {
+  .publication-body h6 {
     color: #fff;
   }
-  .publication-text a {
+  .publication-body p a {
     color: #7AC943;
   }
   .tag {
@@ -242,7 +242,7 @@ body.dark-mode {
   .contact-link:hover svg path {
     stroke: #116444;
   }
-  .publication-text a:hover {
+  .publication-body p a:hover {
     color: #116444;
   }
 }
