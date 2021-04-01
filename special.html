@@ -209,11 +209,26 @@
             <div class="row">
                 <div class="offset-sm-1 col-sm-10 offset-lg-2 col-lg-8">
                     <div class="special-top">
-                        <div class="special-top-left"></div>
+                        <div class="special-top-left">
+                            <div class="special-gif">
+                                <img src="img/main/covid.gif">
+                            </div>
+                            <div class="special-gif special-gif-dark">
+                                <img src="img/main/covid-black.gif">
+                            </div>
+                        </div>
                         <h1 class="special-title">COVID-19</h1>
                         <span class="special-icon">Спец. выпуск</span>
                         <p class="special-text">Потенциально тяжёлая, острая респираторная инфекция, вызываемая коронавирусом SARS-CoV-2. Представляет собой опасное заболевание, которое может протекать как в форме острой респираторной вирусной инфекции лёгкого течения, так и в тяжёлой форме.</p>
-                        <div class="special-top-right"></div>
+                        <div class="special-top-right">
+                            <div class="special-gif">
+                                <img src="img/main/facemask.gif">
+                            </div>
+                            <div class="special-gif special-gif-dark">
+                                <img src="img/main/facemask-black.gif">
+                            </div>
+
+                        </div>
                     </div>
                     <div class="special-news-wrapper">
                         <h6 class="article-title">Последние новости</h6>
@@ -552,33 +567,45 @@
 <script src="js/main.js"></script>
 <script>
     //lottie
-    var covid = document.getElementsByClassName("special-top-left");
-    function covidAnimate(covid) {
-        var animation = bodymovin.loadAnimation({
-            container: covid,
-            renderer: "svg",
-            loop: true,
-            autoplay: true,
-            path: "lottie/covid.json"
-        });
-    }
-    for (var i = 0; i < covid.length; i++) {
-        covidAnimate(covid[i]);
-    }
+    // var covid = document.getElementsByClassName("special-top-left");
+    // function covidAnimate(covid) {
+    //     var animation = bodymovin.loadAnimation({
+    //         container: covid,
+    //         renderer: "svg",
+    //         loop: true,
+    //         autoplay: true,
+    //         path: "lottie/covid.json"
+    //     });
+    // }
+    // for (var i = 0; i < covid.length; i++) {
+    //     covidAnimate(covid[i]);
+    // }
+    //
+    // var mask = document.getElementsByClassName("special-top-right");
+    // function maskAnimate(mask) {
+    //     var animation = bodymovin.loadAnimation({
+    //         container: mask,
+    //         renderer: "svg",
+    //         loop: true,
+    //         autoplay: true,
+    //         path: "lottie/mask.json"
+    //     });
+    // }
+    // for (var i = 0; i < mask.length; i++) {
+    //     maskAnimate(mask[i]);
+    // }
 
-    var mask = document.getElementsByClassName("special-top-right");
-    function maskAnimate(mask) {
-        var animation = bodymovin.loadAnimation({
-            container: mask,
-            renderer: "svg",
-            loop: true,
-            autoplay: true,
-            path: "lottie/mask.json"
-        });
-    }
-    for (var i = 0; i < mask.length; i++) {
-        maskAnimate(mask[i]);
-    }
+    //gif on dark mode
+    $('.switch-mode').click(function (){
+        if($('body').hasClass('dark-mode')) {
+            $('.special-gif').hide();
+            $('.special-gif-dark').show();
+        } else {
+            $('.special-gif').show();
+            $('.special-gif-dark').hide();
+        }
+    })
+
 </script>
 </body>
 </html>

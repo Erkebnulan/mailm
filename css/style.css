@@ -2958,6 +2958,20 @@ blockquote:before {
   top: 0;
 }
 
+.special-gif {
+  width: 100%;
+  height: 100%;
+}
+
+.special-gif img {
+  width: 100%;
+  height: 100%;
+}
+
+.special-gif-dark {
+  display: none;
+}
+
 .special-title {
   font-weight: 600;
   font-size: 38px;
