@@ -2,6 +2,7 @@
   .header-nav {
     overflow-x: auto;
     margin-left: 35px;
+    overflow-y: hidden;
   }
   .header-nav::-webkit-scrollbar {
     display: none;
@@ -11,6 +12,9 @@
   }
   .line-arrow {
     width: 75%;
+  }
+  .mixNews {
+    width: 100%;
   }
 }
 
@@ -254,19 +258,11 @@
   }
   .publication-img {
     width: initial;
-    margin: 0 -100px;
     left: initial;
-    transform: initial;
-    border-radius: 0;
-    height: 400px;
+    height: 300px;
   }
   .video-iframe {
-    width: initial;
-    margin: 30px -100px 0 -100px;
-    left: initial;
-    transform: initial;
-    border-radius: 0;
-    height: 400px;
+    height: 300px;
   }
   .publication {
     padding: 30px 0 60px 0;
@@ -276,6 +272,9 @@
   }
   .video-page .videoNews {
     width: 45% !important;
+  }
+  .mixNews {
+    padding: 10px 15px;
   }
 }
 
@@ -298,13 +297,10 @@
       order: 4;
     }
     .header-nav {
-      width: 100%;
       flex: initial;
-      margin-left: 0;
-      position: absolute;
-      top: 45px;
-      left: 15px;
+      margin: 20px -30px 0 -15px;
       display: none;
+      order: 5;
     }
   }
   .dark-header .header-nav {
@@ -314,14 +310,7 @@
     background: #fff;
   }
   header.dark-header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 99;
-    margin-top: 30px;
-    background: transparent;
-    padding: 0;
+    background: rgba(0, 0, 0, 0.7)
   }
   .dark-header .header-logo {
     display: none;
@@ -342,7 +331,7 @@
   }
   .main-slider-item {
     border-radius: 0;
-    height: 540px;
+    height: 470px;
   }
   .main-slider {
     margin: 0 -15px;
@@ -360,17 +349,14 @@
     overflow-y: auto;
     border-radius: 0;
   }
-  .dark-header .collapse-menu.show {
-    padding: 30px;
-  }
   .collapse-menu.show .icon-bar {
     background: #1A1A1A;
   }
   .main-slider .slick-dots {
-    bottom: 30px;
+    bottom: 15px;
   }
   .main-slider-caption {
-    padding: 120px 15px 62px 15px;
+    padding: 120px 15px 40px 15px;
     align-items: center;
   }
   .main-slider .news-time {
@@ -379,14 +365,24 @@
     margin-top: 15px;
   }
   .main-slider .news-title {
-    font-size: 38px;
-    line-height: 36px;
+    font-size: 30px;
+    line-height: 110%;
     text-align: center;
-    margin-top: 15px;
+    margin-top: 10px;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -moz-box;
+    -moz-box-orient: vertical;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    line-clamp: 3;
+    box-orient: vertical;
   }
   .main-slider .slider-rubric {
-    padding: 9px 15px;
-    font-size: 14px;
+    padding: 7px 14px;
+    font-size: 12px;
     line-height: 100%;
   }
   .day-news {
@@ -541,14 +537,17 @@
     text-align: left;
   }
   .subscribe-text {
-    margin-top: 16px;
+    margin-top: 10px;
     text-align: left;
   }
   .subscribe-img {
-    height: 250px;
+    display: none;
   }
   .subscribe-img img {
     border-radius: initial;
+  }
+  .subscribe-bottom {
+    margin-top: 15px;
   }
   .input-form {
     padding: 10px 15px;
@@ -994,7 +993,7 @@
     transform: translateY(-100%);
   }
   .wrapper {
-    margin-top: 60px;
+    padding-top: 60px!important;
   }
   .mt-0 {
     margin-top: 0;
@@ -1002,12 +1001,35 @@
   .about-author.opacity-1 {
     opacity: 1!important;
   }
+  .wrapper.pt-0 {
+    padding-top: 0!important;
+  }
+  .mixNews {
+    margin-top: 15px;
+  }
+
+  .main-slider {
+    .slick-prev, .slick-next {
+      width: 30px;
+      height: 30px;
+    }
+    .slick-prev {
+      left: 10px;
+    }
+    .slick-next {
+      right: 10px;
+    }
+  }
+  .publication-author {
+    order: 2;
+  }
+  .header-logo, .header-logo-white, .menu-logo, .menu-logo-white {
+    width: 85px;
+    height: 30px;
+  }
 }
 
 @media (max-width: 320px) {
-  .main-slider-item {
-    height: 470px;
-  }
   .podcast-page .podcast-box {
     width: 140px;
   }
@@ -1075,4 +1097,25 @@
   .container {
     max-width: 1200px;
   }
+  .dropdown-menu {
+    transition: all .2s ease-in, visibility 0s linear .2s, transform .2s linear, -webkit-transform .2s linear;
+    margin-top: 5px;
+    display: block;
+    will-change: initial !important;
+    transform: translate(0) !important;
+    left: 0 !important;
+  }
+  .dropdown-menu {
+    visibility: hidden;
+    opacity: 0;
+  }
+  .dropdown:hover > .dropdown-menu {
+    visibility: visible;
+    transition: all .45s ease 0s;
+    opacity: 1;
+  }
+  body {
+    zoom: 0.9;
+  }
 }
+

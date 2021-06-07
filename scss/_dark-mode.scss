@@ -245,4 +245,33 @@ body.dark-mode {
   .publication-body p a:hover {
     color: #116444;
   }
+  .dropdown-toggle::after {
+    background: url(../img/icon/arrow-down-white.svg) no-repeat center/contain;
+  }
+  .dropdown-menu {
+    background: #1A1A1A;
+  }
+  .dropdown-menu a {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  .dropdown-menu a:hover, .dropdown-menu a:focus {
+    background: #116444 !important;
+    color: rgba(255, 255, 255, 0.7);
+  }
+  blockquote:before {
+    background: #000;
+  }
+  .p-link p {
+    color: #fff!important;
+  }
+  .mixNews {
+    background: #1A1A1A;
+  }
+  .mixNews-header h5 {
+    color: #7AC943;
+  }
+  .mixNews-caption h6 {
+    color: #fff;
+  }
+
 }

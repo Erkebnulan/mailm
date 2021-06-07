@@ -35,7 +35,7 @@ var header = $('header'),
 $(window).scroll(function() {
     var scrolled = $(window).scrollTop();
 
-    if ($(window).width() < 576 && scrolled > 100 && scrolled > scrollPrev ) {
+    if (/*$(window).width() < 576 && */scrolled > 100 && scrolled > scrollPrev ) {
         header.addClass('out');
     } else {
         header.removeClass('out');
