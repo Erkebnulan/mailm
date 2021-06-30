@@ -407,6 +407,96 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="comment-box">
+                            <div class="comment-write">
+                                <h6>Пікіріңізді қалдырыңыз</h6>
+                                <div class="comment-form">
+                                    <div class="half-form">
+                                        <label class="form-label">
+                                            <span>Аты-жөні</span>
+                                            <input type="text">
+                                        </label>
+                                        <label class="form-label">
+                                            <span>E-mail</span>
+                                            <input type="email">
+                                        </label>
+                                    </div>
+                                    <label class="form-label mt-10">
+                                        <span>Сіздің пікіріңіз</span>
+                                        <textarea rows="1"></textarea>
+                                    </label>
+                                </div>
+                                <button class="btn-plain submit-btn">Жіберу</button>
+                            </div>
+                            <div class="comment-wrapper">
+                                <div class="comment">
+                                    <div class="comment-top">
+                                        <div class="comment-author">
+                                            <div class="comment-author-img">
+                                                <img src="">
+                                            </div>
+                                            <div class="comment-author-caption">
+                                                <div class="comment-author-name">
+                                                    <p>Nurlan Baidilda</p>
+                                                </div>
+                                                <div class="comment-detail">
+                                                    <div class="comment-time">
+                                                        <p>27 декабря 2020 в 18:36</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="comment-content">
+                                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                                    </div>
+                                </div>
+                                <div class="comment">
+                                    <div class="comment-top">
+                                        <div class="comment-author">
+                                            <div class="comment-author-img">
+                                                <img src="">
+                                            </div>
+                                            <div class="comment-author-caption">
+                                                <div class="comment-author-name">
+                                                    <p>Nurlan Baidilda</p>
+                                                </div>
+                                                <div class="comment-detail">
+                                                    <div class="comment-time">
+                                                        <p>27 декабря 2020 в 18:36</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="comment-content">
+                                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                                    </div>
+                                </div>
+                                <div class="comment">
+                                    <div class="comment-top">
+                                        <div class="comment-author">
+                                            <div class="comment-author-img">
+                                                <img src="">
+                                            </div>
+                                            <div class="comment-author-caption">
+                                                <div class="comment-author-name">
+                                                    <p>Nurlan Baidilda</p>
+                                                </div>
+                                                <div class="comment-detail">
+                                                    <div class="comment-time">
+                                                        <p>27 декабря 2020 в 18:36</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="comment-content">
+                                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="col-sm-4">
@@ -505,7 +595,44 @@
 <script src="js/libs.min.js"></script>
 <script src="js/main.js"></script>
 <script>
+    //form-label
+    $('.form-label input').focus(function () {
+        $(this).closest('.form-label').addClass('form-label-focus');
+    });
+    $('.form-label input').blur(function () {
+        $(this).closest('.form-label').removeClass('form-label-focus');
+        $(this).closest('.form-label').addClass('form-label-done');
+        if ($(this).val().length === 0) {
+            $(this).closest('.form-label').removeClass('form-label-focus');
+            $(this).closest('.form-label').removeClass('form-label-done');
+        }
+    });
 
+    $('.form-label textarea').focus(function () {
+        $(this).closest('.form-label').addClass('form-label-focus');
+    });
+    $('.form-label textarea').blur(function () {
+        $(this).closest('.form-label').removeClass('form-label-focus');
+        $(this).closest('.form-label').addClass('form-label-done');
+        if ($(this).val().length === 0) {
+            $(this).closest('.form-label').removeClass('form-label-focus');
+            $(this).closest('.form-label').removeClass('form-label-done');
+        }
+    });
+
+    //resize textarea
+    $('.form-label textarea').each(function(index, element) {
+        var elasticElement = element,
+            $elasticElement = $(element),
+            initialHeight = initialHeight || $elasticElement.height(),
+            delta = parseInt( $elasticElement.css('paddingBottom') ) + parseInt( $elasticElement.css('paddingTop') ) || 0,
+            resize = function() {
+                $elasticElement.height(initialHeight);
+                $elasticElement.height( elasticElement.scrollHeight - delta );
+            };
+        $elasticElement.on('input change keyup', resize);
+        resize();
+    });
 </script>
 </body>
 </html>

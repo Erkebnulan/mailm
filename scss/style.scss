@@ -707,6 +707,15 @@ header.out {
   font-size: 18px;
   line-height: 130%;
   color: #1A1A1A;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -moz-box;
+  -moz-box-orient: vertical;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  line-clamp: 2;
+  box-orient: vertical;
 }
 
 .meta {
@@ -793,6 +802,15 @@ header.out {
   line-height: 130%;
   color: #1A1A1A;
   transition: 0.2s ease;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -moz-box;
+  -moz-box-orient: vertical;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  line-clamp: 2;
+  box-orient: vertical;
 }
 
 .news-item:hover .news-item-title {
@@ -2764,6 +2782,196 @@ blockquote:before {
   margin-top: 0!important;
   font-size: 17px;
 }
+
+
+
+
+
+
+.comment-box {
+  margin-top: 30px;
+}
+
+.comment-write h6 {
+  font-family: "SF Pro Text";
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 110%;
+  letter-spacing: -0.3px;
+  color: #000000;
+}
+
+.comment-form {
+  margin-top: 10px;
+}
+
+.form-label textarea {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  resize: none;
+  border: none;
+}
+
+.form-label textarea::-webkit-scrollbar {
+  display: none;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.form-label {
+  position: relative;
+  min-height: 50px;
+  width: 100%;
+  box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.1);
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  padding: 12px 0;
+}
+
+.form-label span {
+  position: absolute;
+  left: 0;
+  top: 15px;
+  display: block;
+  width: fit-content;
+  font-family: "SF Pro Display";
+  font-size: 17px;
+  line-height: 120%;
+  color: #878787;
+  white-space: nowrap;
+  pointer-events: none;
+  user-select: none;
+  cursor: text;
+  transition: transform 0.175s cubic-bezier(0.215, 0.61, 0.355, 1), color 0.175s cubic-bezier(0.215, 0.61, 0.355, 1), font-size 0.175s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 0.175s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transform-origin: 0 0;
+}
+
+.form-label input {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.half-form {
+  display: flex;
+  margin: 0 -5px;
+}
+
+.half-form .form-label {
+  width: calc(50% - 10px);
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.form-label:after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #162F71;
+  transform: scaleX(0);
+  transform-origin: 0 0;
+  transition: transform 0.175s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.form-label-focus:after {
+  transform: scaleX(1);
+}
+
+.form-label-focus span {
+  transform: translateY(-22px) translateX(0) scale(0.75) translateZ(0);
+}
+
+.form-label-done span {
+  transform: translateY(-22px) translateX(0) scale(0.75) translateZ(0);
+}
+
+.submit-btn {
+  margin-top: 10px;
+  background: #116444;
+  box-shadow: 0 6px 15px rgba(17, 100, 68, 0.1);
+  border-radius: 6px;
+  padding: 16px 15px;
+  min-height: 50px;
+  font-family: "SF Pro Display";
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 100%;
+  color: #FFFFFF;
+  width: 100%;
+}
+
+.comment-wrapper {
+  margin-top: 30px;
+}
+
+.comment {
+  box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.1);
+  padding: 15px 0;
+}
+
+.comment-top {
+  display: flex;
+}
+
+.comment-author {
+  display: flex;
+  align-items: center;
+}
+
+.comment-author-img {
+  background: url("../img/icon/profile.svg") #F5F5F5 no-repeat center/contain;
+  background-size: 30px 30px;
+  width: 50px;
+  min-width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.comment-author-caption {
+  margin-left: 20px;
+}
+
+.comment-author-name p {
+  font-family: "SF Pro Display";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 100%;
+  color: #1A1A1A;
+}
+
+.comment-detail {
+  margin-top: 6px;
+}
+
+.comment-time p {
+  font-family: "SF Pro Display";
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: -0.3px;
+  color: #878787;
+}
+
+.comment-content {
+  margin-top: 8px;
+}
+
+.comment-content p {
+  font-family: "SF Pro Display";
+  font-size: 16px;
+  line-height: 130%;
+  color: #1A1A1A;
+}
+
+
 
 
 @import "media";
