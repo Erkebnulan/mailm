@@ -3979,6 +3979,70 @@ blockquote:before {
   color: #1A1A1A;
 }
 
+.newsCard-banner {
+  width: 270px;
+  height: 360px;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #FFE4BC;
+  margin: 0 15px;
+}
+
+.newsCard-banner img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.newsCard-wrapper .newsCard-banner {
+  margin: 15px;
+}
+
+.publication-banner {
+  width: 100%;
+  height: 120px;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #FFE4BC;
+  margin-top: 30px;
+}
+
+.publication-banner img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.mix-news-banner {
+  width: 100%;
+  height: 450px;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #FFE4BC;
+  margin-top: 20px;
+}
+
+.mix-news-banner img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.header-banner {
+  width: 100%;
+  height: 90px;
+  overflow: hidden;
+  background: #FFE4BC;
+  margin-top: -15px;
+}
+
+.wrapper.is-banner {
+  padding-top: 180px !important;
+}
+
 @media (max-width: 1200px) {
   .header-nav {
     overflow-x: auto;
@@ -4051,6 +4115,9 @@ blockquote:before {
   .newsCard-wrapper .newsCard {
     width: 45% !important;
     margin: 15px;
+  }
+  .newsCard-wrapper .newsCard-banner {
+    width: 45% !important;
   }
   .newsCard-img {
     height: 170px;
@@ -4258,6 +4325,12 @@ blockquote:before {
   }
   .mixNews {
     padding: 10px 15px;
+  }
+  .publication-banner {
+    height: 70px;
+  }
+  .mix-news-banner {
+    height: 320px;
   }
 }
 
@@ -4741,6 +4814,9 @@ blockquote:before {
     margin: 15px 0;
     width: 100% !important;
   }
+  .newsCard-wrapper .newsCard-banner {
+    width: 100% !important;
+  }
   .newsCard-wrapper .newsCard-img {
     border-radius: 0;
     height: 210px !important;
@@ -5149,6 +5225,25 @@ blockquote:before {
   }
   .comment-content p {
     font-size: 14px;
+  }
+  .newsCard-wrapper .newsCard-banner {
+    width: 100%;
+  }
+  .publication-banner {
+    width: calc(100% + 60px);
+    border-radius: 0;
+    margin: 15px -30px 0 -30px;
+    max-height: 70px;
+  }
+  .header-banner {
+    height: 60px;
+    margin-bottom: 15px;
+  }
+  .wrapper.is-banner {
+    padding-top: 120px !important;
+  }
+  .wrapper.is-banner.pt-0 {
+    padding-top: 60px !important;
   }
 }
 
