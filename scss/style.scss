@@ -3032,6 +3032,36 @@ blockquote:before {
   padding-top: 180px!important;
 }
 
+.comment-authorize {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.comment-authorize p {
+  font-family: "SF Pro Display";
+  font-size: 16px;
+  line-height: 130%;
+  color: #878787;
+}
+
+.comment-social {
+  display: flex;
+  margin-left: 10px;
+}
+
+.comment-social li + li {
+  margin-left: 10px;
+}
+
+.comment-social li a {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 
 
 @import "media";

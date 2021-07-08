@@ -4043,6 +4043,48 @@ blockquote:before {
   padding-top: 180px !important;
 }
 
+.comment-authorize {
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.comment-authorize p {
+  font-family: "SF Pro Display";
+  font-size: 16px;
+  line-height: 130%;
+  color: #878787;
+}
+
+.comment-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 10px;
+}
+
+.comment-social li + li {
+  margin-left: 10px;
+}
+
+.comment-social li a {
+  width: 24px;
+  height: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 @media (max-width: 1200px) {
   .header-nav {
     overflow-x: auto;
@@ -4384,6 +4426,8 @@ blockquote:before {
   }
   header.dark-header {
     background: rgba(0, 0, 0, 0.7);
+    -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
   }
   .dark-header .header-logo {
     display: none;
@@ -5245,6 +5289,13 @@ blockquote:before {
   .wrapper.is-banner.pt-0 {
     padding-top: 60px !important;
   }
+  .comment-authorize {
+    display: block;
+  }
+  .comment-social {
+    margin-top: 10px;
+    margin-left: 0;
+  }
 }
 
 @media (max-width: 320px) {
@@ -5336,6 +5387,6 @@ blockquote:before {
     opacity: 1;
   }
   body {
-    zoom: 0.9;
+    zoom: 0.8;
   }
 }
