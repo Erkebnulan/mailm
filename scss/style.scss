@@ -3062,6 +3062,68 @@ blockquote:before {
   justify-content: center;
 }
 
+.catalog-authorCard {
+  display: flex;
+}
+
+.authorCard-img {
+  width: 64px;
+  min-width: 64px;
+  height: 64px;
+  background: url("../img/icon/profile.svg") #F5F5F5 no-repeat center/contain;
+  background-size: 32px 32px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.authorCard-caption {
+  margin-left: 20px;
+  flex: 1;
+}
+
+.authorCard-caption h6 {
+  font-family: "SF Pro Display";
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 36px;
+  color: #1A1A1A;
+}
+
+.authorCard-detail {
+  margin-top: 7px;
+}
+
+.authorCard-detail-meta {
+  display: flex;
+  align-items: center;
+}
+
+.authorCard-detail-meta li + li {
+  margin-left: 10px;
+}
+
+.authorCard-detail-meta li {
+  display: flex;
+  align-items: center;
+}
+
+.authorCard-detail-meta li span {
+  font-family: SF Pro Display;
+  font-size: 16px;
+  line-height: 130%;
+  color: #1A1A1A;
+  margin-left: 5px;
+  display: block;
+  width: fit-content;
+}
+
+.authorCard-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
 
 
 @import "media";
